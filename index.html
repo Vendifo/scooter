@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon.png">
+    <title>ЭлектроСкутер</title>
+
+</head>
+
+<body class="font-sans bg-gray-200">
+
+
+    <header class="fixed top-0 left-0 right-0 py-4 bg-gray-900 shadow-md z-50">
+        <div class="container mx-auto px-4 flex items-center justify-between">
+            <div class="text-xl font-bold text-white">ЭлектроСкутер</div>
+            <button id="menu-toggle" class="lg:hidden p-2 text-gray-300 hover:text-blue-500">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+            <nav id="menu" class="hidden lg:flex lg:items-center lg:space-x-6">
+                <ul class="flex flex-wrap justify-center space-x-6">
+                    <li><a href="#company" class="text-gray-300 hover:text-blue-500">О компании</a></li>
+                    <li><a href="#electro" class="text-gray-300 hover:text-blue-500">Наши электроскутеры</a></li>
+                    <li><a href="#info" class="text-gray-300 hover:text-blue-500">Информация о доставе</a></li>
+                    <li><a href="#galery" class="text-gray-300 hover:text-blue-500">Галерея</a></li>
+                    <li><a href="#contact" class="text-gray-300 hover:text-blue-500">Контакты</a></li>
+                    <li><a href="#testimonial" class="text-gray-300 hover:text-blue-500">Отзывы клиетов</a></li>
+                </ul>
+            </nav>
+
+            <div id="mobile-menu" class="lg:hidden nav-menu absolute top-16 left-0 right-0 bg-gray-800 shadow-lg">
+                <ul class="flex flex-col space-y-4 p-4">
+                    <li><a href="#company" class="text-gray-300 hover:text-blue-500">О компании</a></li>
+                    <li><a href="#electro" class="text-gray-300 hover:text-blue-500">Наши электроскутеры</a></li>
+                    <li><a href="#info" class="text-gray-300 hover:text-blue-500">Часто задаваемые вопросы</a></li>
+                    <li><a href="#galery" class="text-gray-300 hover:text-blue-500">Галерея</a></li>
+                    <li><a href="#contact" class="text-gray-300 hover:text-blue-500">Контакты</a></li>
+                    <li><a href="#testimonial" class="text-gray-300 hover:text-blue-500">Отзывы клиентов</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="pt-18">
+
+        <section>
+            <div class="bg-cover bg-center bg-image flex items-center justify-start px-6 py-12">
+                <div
+                    class="text-left text-black p-6 bg-opacity-75 bg-white rounded-lg w-full sm:w-3/4 md:w-2/3 lg:w-1/3">
+                    <p class="text-lg font-semibold mb-2 text-blue-500">Удобство</p>
+                    <h1 class="text-4xl font-bold mb-4 text-blue-600">Откройте будущее</h1>
+                    <p class="mb-6 text-gray-700">Добро пожаловать на наш сайт - <span
+                            class="font-semibold text-blue-600">ЭлектроСкутер</span>! Откройте будущее транспорта с
+                        нашими электроскутерами. Ищете удобный, экологически чистый и стильный способ передвижения по
+                        городу? Наши электроскутеры - идеальное решение для вас! Мы предлагаем широкий ассортимент
+                        моделей, которые подойдут для любого образа жизни и бюджета.</p>
+
+                    <form action="#" method="post" class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-800">Имя</label>
+                            <input type="text" id="name" name="name" required
+                                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-800">Телефон</label>
+                            <input type="tel" id="phone" name="phone" required
+                                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                        </div>
+                        <div>
+                            <button type="submit"
+                                class="w-full px-4 py-2 bg-blue-600 text-white font-semibold rounded-md shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="company" class="py-16 relative overflow-hidden">
+            <div class="absolute inset-0 flex items-center justify-center opacity-10">
+                <svg class="w-1/2 h-auto text-blue-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"
+                    fill="currentColor">
+                    <circle cx="100" cy="100" r="90" stroke="currentColor" stroke-width="20" fill="none" />
+                    <circle cx="100" cy="100" r="70" stroke="currentColor" stroke-width="20" fill="none" />
+                    <circle cx="100" cy="100" r="50" stroke="currentColor" stroke-width="20" fill="none" />
+                </svg>
+            </div>
+            <div
+                class="container mx-auto px-4 lg:px-8 flex flex-col lg:flex-row items-center justify-between space-y-12 lg:space-y-0 relative z-10">
+                <div class="lg:w-1/2 bg-white rounded-lg shadow-lg p-8">
+                    <h2 class="text-4xl font-bold mb-6 text-blue-900">Почему выбрать наши электроскутеры?</h2>
+                    <div class="mb-6">
+                        <h3 class="text-2xl font-semibold text-blue-800 mb-2">Преимущества:</h3>
+                        <ul class="list-disc list-inside text-gray-700">
+                            <li>Экологически чистый и устойчивый транспорт</li>
+                            <li>Передовые технологии для плавной езды</li>
+                            <li>Компактный и стильный дизайн</li>
+                            <li>Долговечная батарея</li>
+                        </ul>
+                    </div>
+                    <div class="mb-6">
+                        <h3 class="text-2xl font-semibold text-blue-800 mb-2">Способы оплаты:</h3>
+                        <p class="text-gray-700">Мы предлагаем гибкие варианты оплаты, включая безопасные
+                            онлайн-платежи, рассрочку и различные кредитные/дебетовые карты.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-blue-800 mb-2">Доставка и поддержка:</h3>
+                        <p class="text-gray-700">Наслаждайтесь быстрой и надежной доставкой. Наша команда готова
+                            предоставить отличную поддержку клиентов, чтобы помочь вам с любыми вопросами или
+                            проблемами.</p>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <img src="./assets/images/himo.jpg" alt="Электроскутер"
+                            class="rounded-lg shadow-2xl transition-transform duration-500 transform hover:scale-105">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="electro" class="py-16">
+            <div class="container mx-auto px-4">
+
+                <div class="text-left mb-8">
+                    <h1 class="text-3xl font-bold mb-4 text-blue-900">Наши Прекрасные Продукты</h1>
+                    <p class="text-lg text-gray-700">Откройте для себя нашу коллекцию уникальных продуктов, которые
+                        сочетают в себе стиль и функциональность.</p>
+                </div>
+
+                <div class="relative">
+
+                    <div class="slider-container overflow-hidden">
+                        <div class="flex transition-transform duration-300 ease-in-out" id="slider">
+
+                            <div class="slide flex-shrink-0 w-1/3 p-4">
+                                <div class="bg-white rounded-lg shadow-lg p-4">
+                                    <img src="./assets/images/product.jpg" alt="Продукт 1"
+                                        class="w-full object-cover rounded-md mb-4">
+                                    <h2 class="text-xl font-semibold mb-2 text-blue-900">Продукт 1</h2>
+                                    <p class="text-gray-600 mb-2">Краткое описание продукта 1.</p>
+                                    <span class="block text-blue-900 font-bold">$29.99</span>
+                                </div>
+                            </div>
+                            <div class="slide flex-shrink-0 w-1/3 p-4">
+                                <div class="bg-white rounded-lg shadow-lg p-4">
+                                    <img src="./assets/images/product1.jpg" alt="Продукт 2"
+                                        class="w-full object-cover rounded-md mb-4">
+                                    <h2 class="text-xl font-semibold mb-2 text-blue-900">Продукт 2</h2>
+                                    <p class="text-gray-600 mb-2">Краткое описание продукта 2.</p>
+                                    <span class="block text-blue-900 font-bold">$39.99</span>
+                                </div>
+                            </div>
+                            <div class="slide flex-shrink-0 w-1/3 p-4">
+                                <div class="bg-white rounded-lg shadow-lg p-4">
+                                    <img src="./assets/images/product2.jpg" alt="Продукт 3"
+                                        class="w-full object-cover rounded-md mb-4">
+                                    <h2 class="text-xl font-semibold mb-2 text-blue-900">Продукт 3</h2>
+                                    <p class="text-gray-600 mb-2">Краткое описание продукта 3.</p>
+                                    <span class="block text-blue-900 font-bold">$49.99</span>
+                                </div>
+                            </div>
+                            <div class="slide flex-shrink-0 w-1/3 p-4">
+                                <div class="bg-white rounded-lg shadow-lg p-4">
+                                    <img src="./assets/images/product3.jpeg" alt="Продукт 4"
+                                        class="w-full object-cover rounded-md mb-4">
+                                    <h2 class="text-xl font-semibold mb-2 text-blue-900">Продукт 4</h2>
+                                    <p class="text-gray-600 mb-2">Краткое описание продукта 4.</p>
+                                    <span class="block text-blue-900 font-bold">$59.99</span>
+                                </div>
+                            </div>
+                            <div class="slide flex-shrink-0 w-1/3 p-4">
+                                <div class="bg-white rounded-lg shadow-lg p-4">
+                                    <img src="./assets/images/product4.jpg" alt="Продукт 5"
+                                        class="w-full object-cover rounded-md mb-4">
+                                    <h2 class="text-xl font-semibold mb-2 text-blue-900">Продукт 5</h2>
+                                    <p class="text-gray-600 mb-2">Краткое описание продукта 5.</p>
+                                    <span class="block text-blue-900 font-bold">$69.99</span>
+                                </div>
+                            </div>
+                            <div class="slide flex-shrink-0 w-1/3 p-4">
+                                <div class="bg-white rounded-lg shadow-lg p-4">
+                                    <img src="./assets/images/product5.jpg" alt="Продукт 6"
+                                        class="w-full object-cover rounded-md mb-4">
+                                    <h2 class="text-xl font-semibold mb-2 text-blue-900">Продукт 6</h2>
+                                    <p class="text-gray-600 mb-2">Краткое описание продукта 6.</p>
+                                    <span class="block text-blue-900 font-bold">$79.99</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between items-center mt-4">
+                        <div class="flex">
+                            <span class="w-3 h-3 bg-blue-600 rounded-full inline-block mx-1 cursor-pointer"
+                                data-index="0"></span>
+                            <span class="w-3 h-3 bg-blue-600 rounded-full inline-block mx-1 cursor-pointer"
+                                data-index="1"></span>
+                            <span class="w-3 h-3 bg-blue-600 rounded-full inline-block mx-1 cursor-pointer"
+                                data-index="2"></span>
+                            <span class="w-3 h-3 bg-blue-600 rounded-full inline-block mx-1 cursor-pointer"
+                                data-index="3"></span>
+                            <span class="w-3 h-3 bg-blue-600 rounded-full inline-block mx-1 cursor-pointer"
+                                data-index="4"></span>
+                            <span class="w-3 h-3 bg-blue-600 rounded-full inline-block mx-1 cursor-pointer"
+                                data-index="5"></span>
+                        </div>
+
+                        <div class="flex gap-5">
+                            <button id="prev" class="bg-blue-600 text-white p-2 rounded-full hover:bg-blue-500"
+                                disabled>
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 19l-7-7 7-7"></path>
+                                </svg>
+                            </button>
+                            <button id="next" class="bg-blue-600 text-white p-2 rounded-full hover:bg-blue-500">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section id="info" class="py-16">
+            <div class="container mx-auto px-4 lg:px-8">
+                <h2 class="text-4xl font-bold text-blue-900 mb-8 text-center">Информация о Доставке</h2>
+                <div class="lg:flex lg:space-x-12">
+                    <div class="lg:w-1/2 bg-white rounded-lg shadow-lg p-8 mb-8 lg:mb-0">
+                        <h3 class="text-2xl font-semibold text-blue-800 mb-4">Типы Доставки</h3>
+                        <ul class="list-disc list-inside text-gray-700 space-y-4">
+                            <li><strong>Стандартная Доставка:</strong> Обычно занимает 5-7 рабочих дней. Идеально для
+                                тех, кто предпочитает экономичный вариант.</li>
+                            <li><strong>Экспресс Доставка:</strong> Доставка в течение 2-3 рабочих дней. Отлично
+                                подходит для клиентов, которым нужны скутеры быстро.</li>
+                            <li><strong>Доставка в День Заказа:</strong> Доступна в некоторых районах для срочных нужд.
+                                Свяжитесь с нами для проверки доступности в вашем районе.</li>
+                        </ul>
+                    </div>
+
+                    <div class="lg:w-1/2 bg-white rounded-lg shadow-lg p-8">
+                        <h3 class="text-2xl font-semibold text-blue-800 mb-4">Зоны и Стоимость Доставки</h3>
+                        <p class="text-gray-700 mb-4">Мы предлагаем доставку по широкому кругу локаций. Стоимость
+                            доставки варьируется в зависимости от вашего местоположения и выбранного типа доставки.</p>
+                        <ul class="list-disc list-inside text-gray-700 space-y-4">
+                            <li><strong>Местная Доставка:</strong> Бесплатно для заказов в пределах 10 миль от нашего
+                                склада.</li>
+                            <li><strong>Региональная Доставка:</strong> Применяется стандартная плата. Проверьте наш
+                                калькулятор доставки для точных тарифов.</li>
+                            <li><strong>Международная Доставка:</strong> Доступна для некоторых стран. Тарифы и время
+                                доставки варьируются; свяжитесь с нами для получения дополнительных сведений.</li>
+                        </ul>
+                        <p class="text-gray-700 mt-4">Для любых специфических запросов или вопросов по доставке,
+                            пожалуйста, свяжитесь с нашей службой поддержки клиентов.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="galery" class="py-16 bg-gray-100">
+            <div class="container mx-auto px-4 lg:px-8">
+                <h2 class="text-4xl font-bold text-blue-900 mb-8 text-center">Галерея</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <div class="relative group">
+                        <img src="./assets/images/galery1.jpg" alt="Electric Scooter Model 1"
+                            class="w-full h-64 object-cover rounded-lg shadow-lg transition-transform duration-300 transform group-hover:scale-105">
+                        <div
+                            class="absolute inset-0 flex items-center justify-center bg-blue-900 bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <p class="text-white text-lg font-bold">Модель 1</p>
+                        </div>
+                    </div>
+
+                    
+                    <div class="relative group">
+                        <img src="./assets/images/galery2.jpg" alt="Electric Scooter Model 2"
+                            class="w-full h-64 object-cover rounded-lg shadow-lg transition-transform duration-300 transform group-hover:scale-105">
+                        <div
+                            class="absolute inset-0 flex items-center justify-center bg-blue-900 bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <p class="text-white text-lg font-bold">Модель 2</p>
+                        </div>
+                    </div>
+
+                    
+                    <div class="relative group">
+                        <img src="./assets/images/galery3.jpg" alt="Electric Scooter Model 3"
+                            class="w-full h-64 object-cover rounded-lg shadow-lg transition-transform duration-300 transform group-hover:scale-105">
+                        <div
+                            class="absolute inset-0 flex items-center justify-center bg-blue-900 bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <p class="text-white text-lg font-bold">Модель 3</p>
+                        </div>
+                    </div>
+
+                    
+                    <div class="relative group">
+                        <img src="./assets/images/galery4.webp" alt="Electric Scooter Model 4"
+                            class="w-full h-64 object-cover rounded-lg shadow-lg transition-transform duration-300 transform group-hover:scale-105">
+                        <div
+                            class="absolute inset-0 flex items-center justify-center bg-blue-900 bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <p class="text-white text-lg font-bold">Модель 4</p>
+                        </div>
+                    </div>
+
+                   
+                    <div class="relative group">
+                        <img src="./assets/images/galery5.webp" alt="Electric Scooter Accessories"
+                            class="w-full h-64 object-cover rounded-lg shadow-lg transition-transform duration-300 transform group-hover:scale-105">
+                        <div
+                            class="absolute inset-0 flex items-center justify-center bg-blue-900 bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <p class="text-white text-lg font-bold">Аксессуары</p>
+                        </div>
+                    </div>
+
+                   
+                    <div class="relative group">
+                        <img src="./assets/images/galery6.webp" alt="Electric Scooter Accessories"
+                            class="w-full h-64 object-cover rounded-lg shadow-lg transition-transform duration-300 transform group-hover:scale-105">
+                        <div
+                            class="absolute inset-0 flex items-center justify-center bg-blue-900 bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <p class="text-white text-lg font-bold">Больше</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contact" class="py-16 bg-blue-50">
+            <div class="container mx-auto px-4 text-center mb-12">
+                <h1 class="text-3xl font-bold mb-4 text-blue-900">Свяжитесь с Нами</h1>
+                <p class="text-lg text-gray-700">Свяжитесь с нами любым из указанных способов:</p>
+            </div>
+        
+            <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+                
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h2 class="text-xl font-semibold mb-4 text-blue-800">Контактная Информация</h2>
+                    <p class="text-gray-700 mb-4">
+                        <strong class="text-blue-900">Адрес:</strong><br>
+                        1234 Elm Street, Suite 567, <br>
+                        Springfield, IL 62701
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        <strong class="text-blue-900">Телефон:</strong><br>
+                        (123) 456-7890
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        <strong class="text-blue-900">Электронная почта:</strong><br>
+                        <a href="mailto:contact@yourcompany.com" class="text-blue-600 hover:underline">contact@yourcompany.com</a>
+                    </p>
+                </div>
+        
+                
+                <div class="bg-white p-8 rounded-lg shadow-lg max-w-md mx-auto">
+                    <h2 class="text-2xl font-semibold mb-6 text-center text-blue-800">Оставьте Сообщение</h2>
+                    <form id="contact-form" class="flex flex-col space-y-4">
+                        <label for="name" class="text-gray-700">Имя</label>
+                        <input type="text" id="name" name="name" placeholder="Ваше Имя"
+                            class="p-3 rounded-md border border-gray-300 bg-gray-50 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            required>
+        
+                        <label for="phone" class="text-gray-700">Телефон</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Ваш Телефон"
+                            class="p-3 rounded-md border border-gray-300 bg-gray-50 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            required>
+        
+                        <button type="submit"
+                            class="bg-blue-600 text-white p-3 rounded-md hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                            Отправить Сообщение
+                        </button>
+                    </form>
+                </div>
+        
+                
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h2 class="text-xl font-semibold mb-4 text-blue-800">Как Нас Найти</h2>
+                    <div class="relative w-full h-60">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.7212751432904!2d-122.41941878468172!3d37.77492977975929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808b5f0db0c7%3A0x9b0e5b8d0352b8ff!2sSan%20Francisco%2C%20CA%2094114%2C%20USA!5e0!3m2!1sen!2sin!4v1636737286556!5m2!1sen!2sin"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+        
+            </div>
+        </section>
+        
+
+
+        <section id="testimonial" class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4 text-center mb-12">
+                <h1 class="text-3xl font-bold mb-4 text-blue-900">Отзывы Клиентов</h1>
+                <p class="text-lg text-gray-700">Посмотрите, что говорят наши клиенты о нас</p>
+            </div>
+        
+            <div class="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                
+               
+                <div class="testimonial-card bg-white rounded-lg shadow-lg relative border border-blue-200">
+                    <div class="testimonial-content p-6 flex flex-col justify-between h-full">
+                        <p class="text-gray-700 italic mb-4 border-l-4 border-blue-600 pl-4">"Отличное обслуживание и качественный товар! Все было выполнено на высшем уровне. Рекомендую всем!"</p>
+                        <div class="flex items-center">
+                            <img src="./assets/images/145341.jpg" alt="Customer" class="w-12 h-12 rounded-full border-4 border-blue-200 mr-4">
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900">Алексей Иванов</h3>
+                                <p class="text-sm text-gray-500">Постоянный клиент</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                
+                <div class="testimonial-card bg-white rounded-lg shadow-lg relative border border-blue-200">
+                    <div class="testimonial-content p-6 flex flex-col justify-between h-full">
+                        <p class="text-gray-700 italic mb-4 border-l-4 border-blue-600 pl-4">"Очень довольна покупкой! Продукт полностью оправдал мои ожидания, а обслуживание было просто превосходным."</p>
+                        <div class="flex items-center">
+                            <img src="./assets/images/maria.jpg" alt="Customer" class="w-12 h-12 rounded-full border-4 border-blue-200 mr-4">
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900">Екатерина Смирнова</h3>
+                                <p class="text-sm text-gray-500">Регулярный клиент</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                
+                <div class="testimonial-card bg-white rounded-lg shadow-lg relative border border-blue-200">
+                    <div class="testimonial-content p-6 flex flex-col justify-between h-full">
+                        <p class="text-gray-700 italic mb-4 border-l-4 border-blue-600 pl-4">"Прекрасное соотношение цены и качества! Быстрая доставка и отличное качество товара сделали мой опыт покупок очень положительным."</p>
+                        <div class="flex items-center">
+                            <img src="./assets/images/415421.jpg" alt="Customer" class="w-12 h-12 rounded-full border-4 border-blue-200 mr-4">
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900">Игорь Петров</h3>
+                                <p class="text-sm text-gray-500">Счастливый покупатель</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+               
+                <div class="testimonial-card bg-white rounded-lg shadow-lg relative border border-blue-200">
+                    <div class="testimonial-content p-6 flex flex-col justify-between h-full">
+                        <p class="text-gray-700 italic mb-4 border-l-4 border-blue-600 pl-4">"Исключительное обслуживание и высокое качество продукта! Всё прошло отлично, буду обращаться снова."</p>
+                        <div class="flex items-center">
+                            <img src="./assets/images/124124142.jpg" alt="Customer" class="w-12 h-12 rounded-full border-4 border-blue-200 mr-4">
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900">Ольга Васильева</h3>
+                                <p class="text-sm text-gray-500">Довольный клиент</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </section>
+        
+        
+
+    </main>
+    <footer class="bg-gray-800 text-white py-16">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between mb-12">
+            
+            <div class="mb-8 md:mb-0 md:w-1/2">
+                <h2 class="text-2xl font-bold mb-4">Свяжитесь с Нами</h2>
+                <p class="text-gray-400 mb-4">Не стесняйтесь обращаться к нам с любыми вопросами или предложениями. Мы всегда готовы помочь!</p>
+                <p class="text-gray-400 mb-4">Наши сотрудники работают с понедельника по пятницу с 9:00 до 18:00 и готовы ответить на ваши запросы в течение 24 часов. В выходные дни мы также проверяем почту, но ответы могут занять немного больше времени.</p>
+                <p class="text-gray-400 mb-4">Вы можете обратиться к нам по следующим темам:
+                    <ul class="list-disc list-inside ml-6">
+                        <li>Вопросы по продуктам и услугам</li>
+                        <li>Поддержка и техническая помощь</li>
+                        <li>Обратная связь и предложения</li>
+                        <li>Запросы на сотрудничество</li>
+                    </ul>
+                </p>
+                <p class="text-gray-400">Если у вас есть срочные вопросы или запросы, не стесняйтесь позвонить нам по телефону, указанному ниже, или воспользоваться формой обратной связи для быстрого ответа.</p>
+            </div>
+            
+
+            
+            <div class="bg-gray-700 p-6 rounded-lg shadow-lg md:w-1/2">
+                <h2 class="text-xl font-semibold mb-4">Контактная Форма</h2>
+                <form id="contact-form" class="flex flex-col space-y-4">
+                    <label for="name" class="text-gray-300">Имя</label>
+                    <input type="text" id="name" name="name" placeholder="Ваше имя"
+                        class="p-3 rounded-md border border-gray-500 bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+                    <label for="phone" class="text-gray-300">Телефон</label>
+                    <input type="text" id="phone" name="phone" placeholder="Ваш телефон"
+                        class="p-3 rounded-md border border-gray-500 bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+                    <button type="submit"
+                        class="bg-blue-600 text-white p-3 rounded-md hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400">Отправить</button>
+                </form>
+            </div>
+        </div>
+
+       
+        <div class="flex flex-col items-center text-center text-gray-400 mb-8">
+            <div class="flex space-x-4 mb-4">
+                <a href="/privacy-policy" class="text-gray-300 hover:text-white">Политика конфиденциальности</a>
+                <a href="/terms-of-service" class="text-gray-300 hover:text-white">Условия использования</a>
+            </div>
+            <p>&copy; 2024 Ваша Компания. Все права защищены.</p>
+            <p class="mt-2">
+                <a href="#" class="text-blue-400 hover:text-blue-300">Наверх</a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+
+
+</body>
+<script src="./js/burger.js"></script>
+<script src="./js/slider.js"></script>
+
+
+</html>

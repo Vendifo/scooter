@@ -1,0 +1,53 @@
+/* CSS Reset */
+
+/* Убираем отступы и поля у всех элементов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Сбрасываем стили у текстовых элементов */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dt, dd {
+    font-family: sans-serif; /* Можно изменить на предпочтительный шрифт */
+    font-size: 100%;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+/* Сбрасываем стили у ссылок */
+a {
+    text-decoration: none;
+    color: inherit; /* Использовать цвет текста родительского элемента */
+}
+
+/* Сбрасываем стили у списков */
+ul, ol {
+    list-style: none;
+}
+
+/* Убираем стили у таблиц */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Убираем стили у форм */
+input, button, textarea, select {
+    border: none;
+    background: none;
+    font: inherit;
+    color: inherit;
+}
+
+/* Убираем стили у элементов формы */
+button, input[type="button"], input[type="submit"] {
+    cursor: pointer;
+}
+
+/* Обеспечиваем нормальное отображение изображений */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
